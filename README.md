@@ -44,18 +44,18 @@ El sistema se basa en una estructura que incluye:
 
 ## 📸 Ejemplos de visualizaciones
 
-### 🏁 Dashboard de comparación de pilotos
+### 🏁 Dashboard de final de carrera
 ![Dashboard 1](images/dashboard1.png)
 
 ---
 
-### 📈 Análisis de tiempos por vuelta
+### 📈 Análisis de tiempos por vuelta entre pilotos
 ![Dashboard 2](images/dashboard2.png)
 
 ---
 
-### 📊 Tabla de datos procesados
-![Tabla de datos](images/table.png)
+### 📊 Comparación de los stints de cada piloto
+![Tabla de datos](images/dashboard3.png)
 
 ---
 
