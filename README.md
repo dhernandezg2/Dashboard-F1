@@ -42,10 +42,10 @@ El sistema se basa en una estructura que incluye:
 
 ---
 
-## 📸 Ejemplos de visualizaciones
+## 📸 Todas las visualizaciones con sus respectivas consultas SQL
 
-### 🏁 Dashboard de final de carrera
-![Dashboard 1](images/dashboard1.png)
+### Primer dashboard
+![Dashboard 1](images/Primer_dashboard.png)
 
 ---
 
