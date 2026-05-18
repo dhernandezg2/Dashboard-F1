@@ -24,10 +24,101 @@ A partir de diferentes fuentes de datos, se construye un sistema que facilita el
 
 ## ⚙️ Tecnologías utilizadas
 
-- Python  
-- Pandas  
-- APIs (OpenF1, FastF1)  
-- Herramientas de visualización (Grafana / Dashboards)
+## Lenguajes y herramientas
+
+- Python
+- SQL
+- Docker
+
+## Librerías utilizadas
+
+- pandas
+- requests
+- psycopg2
+
+## Base de datos
+
+- PostgreSQL
+
+## Visualización
+
+- Grafana
+
+## Fuente de datos
+
+- OpenF1 API
+
+---
+
+# 🔌 API utilizada: OpenF1
+
+El proyecto utiliza OpenF1 como fuente principal de datos de Fórmula 1. (https://openf1.org/)
+
+OpenF1 es una API pública que proporciona información relacionada con:
+
+- Pilotos
+- Resultados
+- Posiciones
+- Tiempos por vuelta
+- Pit stops
+- Stints
+- Sesiones
+- Equipos
+
+La API devuelve la información en formato JSON mediante peticiones HTTP realizadas desde Python.
+
+---
+
+## 📡 Endpoints utilizados
+
+| Endpoint | Descripción |
+|---|---|
+| `/drivers` | Información de pilotos |
+| `/sessions` | Información de sesiones |
+| `/laps` | Datos de vueltas |
+| `/position` | Posiciones durante carrera |
+| `/pit` | Información de pit stops |
+| `/stints` | Información de neumáticos y stints |
+| `/results` | Resultados finales |
+
+---
+
+## 🧪 Ejemplo de petición
+
+```python
+import requests
+
+url = "https://api.openf1.org/v1/drivers?session_key=9472"
+
+response = requests.get(url)
+
+data = response.json()
+
+print(data[:1])
+```
+
+---
+
+## 📄 Ejemplo de respuesta JSON
+
+```json
+[
+  {
+    "broadcast_name": "M VERSTAPPEN",
+    "country_code": "NED",
+    "driver_number": 1,
+    "first_name": "Max",
+    "full_name": "Max Verstappen",
+    "headshot_url": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2024Drivers/verstappen",
+    "last_name": "Verstappen",
+    "meeting_key": 1219,
+    "name_acronym": "VER",
+    "session_key": 9472,
+    "team_colour": "3671C6",
+    "team_name": "Red Bull Racing"
+  }
+]
+```
 
 ---
 
